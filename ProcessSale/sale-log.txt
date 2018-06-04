@@ -1,0 +1,18 @@
+Jun 4, 2018 4:18:15 PM, Exception was thrown: Database failure. Couldn't access ID: MK
+integration.ItemRegistryException: Database failure. Couldn't access ID: MK
+	at integration.ItemRegistry.findItem(ItemRegistry.java:30)
+	at controller.Controller.enterItemID(Controller.java:64)
+	at view.View.sampleExecution(View.java:40)
+	at startup.Main.main(Main.java:25)
+Jun 4, 2018 4:18:15 PM, Exception was thrown: The payment 3kr is not enough for the price 120kr.
+model.InvalidPaymentException: The payment 3kr is not enough for the price 120kr.
+	at model.Sale.finalizeSale(Sale.java:147)
+	at controller.Controller.enterPaidCash(Controller.java:100)
+	at view.View.sampleExecution(View.java:50)
+	at startup.Main.main(Main.java:25)
+Jun 4, 2018 4:18:15 PM, Exception was thrown: The ID rofl could not be found in the database.
+integration.ItemNotFoundException: The ID rofl could not be found in the database.
+	at integration.ItemRegistry.findItem(ItemRegistry.java:34)
+	at controller.Controller.enterItemID(Controller.java:64)
+	at view.View.sampleExecution(View.java:70)
+	at startup.Main.main(Main.java:25)
