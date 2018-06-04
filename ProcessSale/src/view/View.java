@@ -32,12 +32,12 @@ public class View {
         contr.startSale();
         System.out.println("\nAfter call to startSale()");
         try {
-        System.out.println(contr.enterItemID("LK"));
-        System.out.println(contr.enterItemIDAndQuantity("SK", 2));
-        System.out.println(contr.enterItemIDAndQuantity("LK", 3));
-        System.out.println(contr.enterItemID("SK"));
-        System.out.println(contr.enterItemID("SK"));
-        System.out.println(contr.enterItemID("MK"));
+            System.out.println(contr.enterItemID("LK"));
+            System.out.println(contr.enterItemIDAndQuantity("SK", 2));
+            System.out.println(contr.enterItemIDAndQuantity("LK", 3));
+            System.out.println(contr.enterItemID("SK"));
+            System.out.println(contr.enterItemID("SK"));
+            System.out.println(contr.enterItemID("MK"));
         }
         catch (ItemNotFoundException exc) {
             handleException(invalidIDMessage(exc.getID()), exc);
@@ -47,13 +47,13 @@ public class View {
         }
         System.out.println(contr.indicateAllItemsRegistered());
         try {
-        System.out.println(contr.enterPaidCash(3));
+            contr.enterPaidCash(3);
         }
         catch (InvalidPaymentException exc) {
             handleException(invalidPaymentMessage(exc.getPayment(), exc.getPrice()), exc);
         }
         try {
-        System.out.println(contr.enterPaidCash(125));
+            contr.enterPaidCash(125);
         }
         catch (InvalidPaymentException exc) {
             handleException(invalidPaymentMessage(exc.getPayment(), exc.getPrice()), exc);
@@ -62,19 +62,19 @@ public class View {
         contr.startSale();
         System.out.println("\nAfter call to startSale()");
         try {
-        System.out.println(contr.enterItemID("LK"));
-        System.out.println(contr.enterItemIDAndQuantity("SK", 2));
-        System.out.println(contr.enterItemIDAndQuantity("LK", 3));
-        System.out.println(contr.enterItemID("SK"));
-        System.out.println(contr.enterItemID("SK"));
-        System.out.println(contr.enterItemID("rofl"));
+            System.out.println(contr.enterItemID("LK"));
+            System.out.println(contr.enterItemIDAndQuantity("SK", 2));
+            System.out.println(contr.enterItemIDAndQuantity("LK", 3));
+            System.out.println(contr.enterItemID("SK"));
+            System.out.println(contr.enterItemID("SK"));
+            System.out.println(contr.enterItemID("rofl"));
         }
         catch (ItemNotFoundException exc) {
             handleException(invalidIDMessage(exc.getID()), exc);
         }
         System.out.println(contr.indicateAllItemsRegistered());
         try {
-        System.out.println(contr.enterPaidCash(500));
+            contr.enterPaidCash(500);
         }
         catch (InvalidPaymentException exc) {
             handleException(invalidPaymentMessage(exc.getPayment(), exc.getPrice()), exc);
